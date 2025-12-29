@@ -6,7 +6,7 @@ tags: [网络, 代理]
 category: 技术
 author: 雪纷飞
 draft: false
-updated: 2025-12-20
+updated: 2025-12-27
 published: 2025-12-20
 image: "api"
 ---
@@ -24,6 +24,14 @@ __解决思路__：通过简单的手动配置VMware/Hyper-V的网卡，使他�
 # 方法二：配置网卡
 
 如果你不能接受使用桥接模式上网，那么我们来手动配置网卡。下文以Hyper-V为例。
+
+:::TIP
+注意：本方法**无法提供IPv6支持**，如果你需要IPv6支持，请参考如下的博客：[让Hyper-V虚拟机通过IPv6上网][hyperv-ipv6]。
+
+该博客也是更推荐的办法，你可以直接去阅读该博客，**无须阅读本文**。
+
+雪纷飞，2025年12月27日。
+:::
 
 ## 一、找到TUN网卡
 
@@ -118,8 +126,14 @@ DNS: 192.168.137.1
 
 __再次重申：不建议使用这个方法！强烈建议使用[配置网卡](#method-two-set-adapter)的方法！__
 
+:::TIP
+好吧，其实我更推荐[让Hyper-V虚拟机通过IPv6上网][hyperv-ipv6]。
+:::
+
+
 <!-- 引用 -->
 
+[hyperv-ipv6]: /posts/hyperv-ipv6/ "Hyper-V虚拟机与IPv6"
 [new-adapter]: ./new-adapter.png "新建交换机"
 [set-adapter]: ./set-adapter.png "添加交换机"
 [configure-ics]: ./configure-ics.png "配置网络共享"
