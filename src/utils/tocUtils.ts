@@ -44,9 +44,7 @@ export class TOCManager {
 		for (const selector of selectors) {
 			const elements = document.querySelectorAll(selector);
 			for (const element of Array.from(elements)) {
-				const hasHeadings = element.querySelector(
-					"h1, h2, h3, h4, h5, h6",
-				);
+				const hasHeadings = element.querySelector("h1, h2, h3, h4, h5, h6");
 				if (hasHeadings) {
 					return element;
 				}

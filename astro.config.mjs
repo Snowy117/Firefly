@@ -186,6 +186,15 @@ export default defineConfig({
         ],
     },
     vite: {
+        resolve: {
+            conditions: ["module", "browser", "development|production", "default"],
+        },
+        ssr: {
+            resolve: {
+                // Allow packages that only expose a `default` export condition (e.g. Svelte SSR entry)
+                conditions: ["module", "node", "development|production", "default"],
+            },
+        },
         build: {
             rollupOptions: {
                 onwarn(warning, warn) {

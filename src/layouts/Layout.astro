@@ -85,7 +85,8 @@ const siteLang = lang.replace("_", "-");
 // 使用固定的banner偏移量，position配置用于图片定位
 const bannerOffset = `${BANNER_HEIGHT_EXTEND / 2}vh`;
 
-const isLocalhost = Astro.url.hostname === "localhost" || Astro.url.hostname === "127.0.0.1";
+const isLocalhost =
+	Astro.url.hostname === "localhost" || Astro.url.hostname === "127.0.0.1";
 ---
 
 <!doctype html>

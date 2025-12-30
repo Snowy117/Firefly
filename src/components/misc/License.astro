@@ -10,7 +10,7 @@ interface Props {
 	title: string;
 	id: string;
 	pubDate: Date;
-  editDate?: Date;
+	editDate?: Date;
 	class: string;
 	author: string;
 	sourceLink: string;
@@ -18,8 +18,15 @@ interface Props {
 	licenseUrl: string;
 }
 
-const { title, pubDate, editDate, author, sourceLink, licenseName, licenseUrl } =
-	Astro.props;
+const {
+	title,
+	pubDate,
+	editDate,
+	author,
+	sourceLink,
+	licenseName,
+	licenseUrl,
+} = Astro.props;
 const className = Astro.props.class;
 const profileConf = profileConfig;
 const licenseConf = licenseConfig;

@@ -26,7 +26,8 @@ export const zh_CN: Translation = {
 
 	[Key.comments]: "评论",
 	[Key.commentSection]: "评论区",
-	[Key.commentSubtitle]: "留下邮箱才能收到新回复哦！我们不会把您的邮箱泄露给任何人！",
+	[Key.commentSubtitle]:
+		"留下邮箱才能收到新回复哦！我们不会把您的邮箱泄露给任何人！",
 	[Key.commentNotConfigured]: "评论系统暂未配置",
 	[Key.guestbookCommentHint]:
 		"您还未在配置文件中启用评论系统，启用后访客才可在此留言",
@@ -193,7 +194,8 @@ export const zh_CN: Translation = {
 	[Key.scanToSponsor]: "扫码赞助",
 	[Key.sponsorGoTo]: "前往赞助",
 	[Key.sponsorButton]: "支持与分享",
-	[Key.sponsorButtonText]: "如果这篇文章对你有帮助，不妨赞助一下？或者，划到评论区点个赞！",
+	[Key.sponsorButtonText]:
+		"如果这篇文章对你有帮助，不妨赞助一下？或者，划到评论区点个赞！",
 	[Key.shareOnSocial]: "分享",
 	[Key.shareOnSocialDescription]: "如果这篇文章对你有帮助，欢迎分享给更多人！",
 
