@@ -27,6 +27,7 @@ import rehypeEmailProtection from "./src/plugins/rehype-email-protection.mjs";
 import rehypeFigure from "./src/plugins/rehype-figure.mjs";
 import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-copy-button.js";
 import { GithubCardComponent } from "./src/plugins/rehype-component-github-card.mjs";
+import { FileComponent } from "./src/plugins/rehype-component-file.mjs";
 import { expressiveCodeConfig, siteConfig } from "./src/config";
 import "katex/dist/contrib/mhchem.mjs";
 
@@ -142,6 +143,7 @@ export default defineConfig({
 				{
 					components: {
 						github: GithubCardComponent,
+						file: FileComponent,
 					},
 				},
 			],
@@ -171,6 +173,7 @@ export default defineConfig({
 		],
 	},
 	vite: {
+		assetsInclude: ["**/*.zip"],
 		resolve: {
 			alias: {
 				"@rehype-callouts-theme": `rehype-callouts/theme/${siteConfig.rehypeCallouts.theme}`,

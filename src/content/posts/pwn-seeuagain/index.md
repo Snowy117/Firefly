@@ -356,7 +356,9 @@ payload = fmtstr_payload(
 
 ## 下载地址
 
-[点击此处下载zip文件][attachment.zip]
+:::file
+[点击下载 Seeuagain 题目附件][attachment.zip]
+:::
 
 ## 提示
 
@@ -459,4 +461,4 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 
 <!-- 引用 -->
 
-[attachment.zip]: ./attachment.zip "题目Seeuagain下载"
+[attachment.zip]: /assets/ctf/seeuagain.zip "题目Seeuagain下载"
